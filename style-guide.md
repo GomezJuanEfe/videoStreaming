@@ -27,8 +27,6 @@ The designs were created to the following widths:
 
 - white: #ffffff
 
-## Typography
-
 ### Body Copy
 
 - Font size: 16px
