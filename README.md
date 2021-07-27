@@ -57,7 +57,8 @@ Figma - Video Streaming project by Afsar: https://www.figma.com/community/file/9
     Source: https://www.codegrepper.com/code-examples/whatever/watch+pug+files
 
 
-- 
+- When I tried to watch the sass file that error was shown on the browser
+  Refused to apply style from 'http://127.0.0.1:5500/styles/style.css' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
 
 ### Continued development
 
