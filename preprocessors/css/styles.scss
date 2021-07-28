@@ -40,4 +40,101 @@ html {
     margin-top: 50px;
     font-size: 2rem;
   }
+  .main__form-container {
+    width: 80%;
+    max-width: 450px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .main__form {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      flex: 0 0 80%;
+      padding-top: 30px;
+      .form__mail, .form__password {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $black-fourth;
+        font-size: 1.4rem;
+        color: $brand-fourth;
+      }
+      .form__mail:focus-visible, .form__password:focus-visible {
+        outline: none;
+      }
+      .form__submit {
+        width: 140px;
+        height: 35px;
+        font-weight: bold;
+        border: none;
+        border-radius: 3px;
+        background-color: $brand-first;
+        color: white;
+      }
+      .form__submit:active {
+        background-color: $brand-fourth;
+      }
+    }
+    .form__remember-me {
+      input {
+        cursor: pointer;;
+      }
+    }
+  }
+  .social-media {
+    width: 80%;
+    height: 80px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .social-media__fb, .social-media__ig {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      cursor: pointer;
+    }
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+
+  }
+  .main__register {
+    margin-top: 20px;
+  }
+
+}
+.footer {
+  width: 100%;
+  padding: 0 20px;
+  margin: 50px 0 20px;
+  .terms {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      margin-top: 10px;
+    }
+  }
+  .credits {
+    margin-top: 30px;
+    p {
+      text-align: center;
+    }
+  }
+}
+a:link, a:visited {
+  color: $brand-fourth;
+}
+/* Estilos para no mostrar los caracteres del password */
+input[type="password"] {
+  -webkit-text-security: disc;
 }

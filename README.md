@@ -21,6 +21,7 @@ The idea to mix this two things it's in order to create something new and challe
 ### Links
 
 Platzi - Frontend Developer Course: https://platzi.com/clases/frontend-developer/
+
 Figma - Video Streaming project by Afsar: https://www.figma.com/community/file/978204688923563508
 
 
@@ -56,9 +57,17 @@ Figma - Video Streaming project by Afsar: https://www.figma.com/community/file/9
 
     Source: https://www.codegrepper.com/code-examples/whatever/watch+pug+files
 
+- To watch a SASS file
+  
+  watch and output to directories by using folder paths as your input and output, and separating them with a colon. In this example:
 
-- When I tried to watch the sass file that error was shown on the browser
-  Refused to apply style from 'http://127.0.0.1:5500/styles/style.css' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
+  sass --watch app/sass:public/stylesheets
+
+  Sass would watch all files in the app/sass folder for changes, and compile CSS to the public/stylesheets folder.
+
+  Source: https://sass-lang.com/guide
+
+
 
 ### Continued development
 

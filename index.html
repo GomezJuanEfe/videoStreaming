@@ -13,11 +13,11 @@
   <body> 
     <header class="header"><img class="header__logo" src="./assets/logo.svg" alt="logo"></header>
     <main class="main"> 
-      <h1>Inicio sesión</h1>
+      <h1>Inicia sesión</h1>
       <div class="main__form-container">
         <form class="main__form">
           <input class="form__mail" type="text" placeholder="correo">
-          <input class="form__password" type="text" placeholder="contraseña">
+          <input class="form__password" type="password" placeholder="contraseña">
           <input class="form__submit" type="submit" value="Iniciar sesión">
         </form>
         <div class="form__remember-me"> 
@@ -25,18 +25,27 @@
           <label for="cbox1">Recuérdame. </label><a href="">Olvidé la contraseña.</a>
         </div>
       </div>
-      <div class="social-media"> <img class="social-media__fb-logo" src="./assets/facebook.svg" alt="Facebook logo">
-        <p>Inicia sesión con Facebook. </p><img class="social-media__ig-logo" src="./assets/instagram.svg" alt="Instagram logo">
-        <p>Inicia sesión con Instagram. </p>
+      <div class="social-media"> 
+        <div class="social-media__fb"><img class="social-media__fb-logo" src="./assets/facebook.svg" alt="Facebook logo">
+          <p>Inicia sesión con Facebook. </p>
+        </div>
+        <div class="social-media__ig"><img class="social-media__ig-logo" src="./assets/instagram.svg" alt="Instagram logo">
+          <p>Inicia sesión con Instagram. </p>
+        </div>
       </div>
       <div class="main__register"> 
         <p>¿No tienes una cuenta? <a href="">Regístrate.</a></p>
       </div>
     </main>
     <footer class="footer">
-      <p>Términos de uso </p>
-      <p>Declaración de privacidad </p>
-      <p>Centro de ayuda</p>
+      <div class="terms"> 
+        <p>Términos de uso </p>
+        <p>Declaración de privacidad </p>
+        <p>Centro de ayuda</p>
+      </div>
+      <div class="credits">
+        <p>Coded by <a href="https://github.com/GomezJuanEfe">Juan Felipe Gómez</a></p>
+      </div>
     </footer>
   </body>
 </html>

@@ -32,5 +32,101 @@ html {
   margin-top: 50px;
   font-size: 2rem;
 }
+.main .main__form-container {
+  width: 80%;
+  max-width: 450px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .main__form-container .main__form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex: 0 0 80%;
+  padding-top: 30px;
+}
+.main .main__form-container .main__form .form__mail, .main .main__form-container .main__form .form__password {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #807e81;
+  font-size: 1.4rem;
+  color: #1884f7;
+}
+.main .main__form-container .main__form .form__mail:focus-visible, .main .main__form-container .main__form .form__password:focus-visible {
+  outline: none;
+}
+.main .main__form-container .main__form .form__submit {
+  width: 140px;
+  height: 35px;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  background-color: #f41b3b;
+  color: white;
+}
+.main .main__form-container .main__form .form__submit:active {
+  background-color: #1884f7;
+}
+.main .main__form-container .form__remember-me input {
+  cursor: pointer;
+}
+.main .social-media {
+  width: 80%;
+  height: 80px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main .social-media .social-media__fb, .main .social-media .social-media__ig {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  cursor: pointer;
+}
+.main .social-media img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.main .main__register {
+  margin-top: 20px;
+}
+
+.footer {
+  width: 100%;
+  padding: 0 20px;
+  margin: 50px 0 20px;
+}
+.footer .terms {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .terms p {
+  margin-top: 10px;
+}
+.footer .credits {
+  margin-top: 30px;
+}
+.footer .credits p {
+  text-align: center;
+}
+
+a:link, a:visited {
+  color: #1884f7;
+}
+
+/* Estilos para no mostrar los caracteres del password */
+input[type=password] {
+  -webkit-text-security: disc;
+}
 
 /*# sourceMappingURL=styles.css.map */

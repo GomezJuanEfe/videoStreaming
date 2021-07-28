@@ -13,25 +13,31 @@ html(lang="es")
     header.header
       img.header__logo(src="./assets/logo.svg", alt="logo") 
     main.main 
-      h1 Inicio sesión
+      h1 Inicia sesión
       .main__form-container
         form.main__form
           input.form__mail(type="text", placeholder="correo")
-          input.form__password(type="text", placeholder="contraseña")
+          input.form__password(type="password", placeholder="contraseña")
           input.form__submit(type="submit", value="Iniciar sesión")
         .form__remember-me 
           input(type="checkbox", name="remember-me", id="cbox1", value="1",)
           label(for="cbox1") Recuérdame. 
           a(href="") Olvidé la contraseña.
       .social-media 
-        img.social-media__fb-logo(src="./assets/facebook.svg", alt="Facebook logo")
-        p Inicia sesión con Facebook. 
-        img.social-media__ig-logo(src="./assets/instagram.svg", alt="Instagram logo")
-        p Inicia sesión con Instagram. 
+        .social-media__fb
+          img.social-media__fb-logo(src="./assets/facebook.svg", alt="Facebook logo")
+          p Inicia sesión con Facebook. 
+        .social-media__ig
+          img.social-media__ig-logo(src="./assets/instagram.svg", alt="Instagram logo")
+          p Inicia sesión con Instagram. 
       .main__register 
         p ¿No tienes una cuenta? 
           a(href="") Regístrate.
     footer.footer
-      p Términos de uso 
-      p Declaración de privacidad 
-      p Centro de ayuda
+      .terms 
+        p Términos de uso 
+        p Declaración de privacidad 
+        p Centro de ayuda
+      .credits
+        p Coded by 
+          a(href="https://github.com/GomezJuanEfe") Juan Felipe Gómez
