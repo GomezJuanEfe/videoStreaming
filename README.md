@@ -41,7 +41,7 @@ Figma - Video Streaming project by Afsar: https://www.figma.com/community/file/9
 
 #### Pug
 
-- It's important to know how to watch a pug file and output the html file as you what. The next reference help me to solve it.
+- To watch PUG files
 
     pug -w . -o ./html -P
 

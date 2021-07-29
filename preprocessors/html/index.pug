@@ -5,6 +5,7 @@ html(lang="es")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet", href="./styles/styles.css")
+    link(rel="stylesheet", href="./styles/laptop.css" media="(min-width:750px)")
     link(rel="preconnect" href="https://fonts.googleapis.com")
     link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
     link(href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet")
@@ -12,26 +13,30 @@ html(lang="es")
   body 
     header.header
       img.header__logo(src="./assets/logo.svg", alt="logo") 
-    main.main 
-      h1 Inicia sesión
-      .main__form-container
-        form.main__form
-          input.form__mail(type="text", placeholder="correo")
-          input.form__password(type="password", placeholder="contraseña")
-          input.form__submit(type="submit", value="Iniciar sesión")
-        .form__remember-me 
-          input(type="checkbox", name="remember-me", id="cbox1", value="1",)
-          label(for="cbox1") Recuérdame. 
-          a(href="") Olvidé la contraseña.
-      .social-media 
-        .social-media__fb
-          img.social-media__fb-logo(src="./assets/facebook.svg", alt="Facebook logo")
-          p Inicia sesión con Facebook. 
-        .social-media__ig
-          img.social-media__ig-logo(src="./assets/instagram.svg", alt="Instagram logo")
-          p Inicia sesión con Instagram. 
-      .main__register 
-        p ¿No tienes una cuenta? 
+      .header__background 
+        .background-img
+        .gradient 
+    main 
+      .main 
+        h1 Inicia sesión
+        .main__form-container
+          form.main__form
+            input.form__mail(type="text", placeholder="correo")
+            input.form__password(type="password", placeholder="contraseña")
+            input.form__submit(type="submit", value="Iniciar sesión")
+          .form__remember-me 
+            input(type="checkbox", name="remember-me", id="cbox1", value="1",)
+            label(for="cbox1") Recuérdame. 
+            a(href="") Olvidé la contraseña.
+        .social-media 
+          .social-media__fb
+            img.social-media__fb-logo(src="./assets/facebook.svg", alt="Facebook logo")
+            p Inicia sesión con Facebook. 
+          .social-media__ig
+            img.social-media__ig-logo(src="./assets/instagram.svg", alt="Instagram logo")
+            p Inicia sesión con Instagram. 
+        .main__register 
+          p ¿No tienes una cuenta? 
           a(href="") Regístrate.
     footer.footer
       .terms 
@@ -40,4 +45,4 @@ html(lang="es")
         p Centro de ayuda
       .credits
         p Coded by 
-          a(href="https://github.com/GomezJuanEfe") Juan Felipe Gómez
+          a(href="https://github.com/GomezJuanEfe" target="_blank") Juan Felipe Gómez
