@@ -20,10 +20,10 @@ html(lang="es")
       .main 
         h1 Inicia sesión
         .main__form-container
-          form.main__form
+          form.main__form(action="home-index.html")
             input.form__mail(type="text", placeholder="correo")
             input.form__password(type="password", placeholder="contraseña")
-            input.form__submit(type="submit", value="Iniciar sesión")
+            input.form__submit(type="submit", value="Iniciar sesión" )
           .form__remember-me 
             input(type="checkbox", name="remember-me", id="cbox1", value="1",)
             label(for="cbox1") Recuérdame. 
@@ -46,3 +46,4 @@ html(lang="es")
       .credits
         p Coded by 
           a(href="https://github.com/GomezJuanEfe" target="_blank") Juan Felipe Gómez
+    script(src="./index.js")

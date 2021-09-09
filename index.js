@@ -1,0 +1,1 @@
+alert("Hola, bienvenido a este proyecto.\n\nEstá construido con HTML y CSS. El objetivo de este es practicar la maquetación de sitios web y responsive design, prúebalo en diferentes dispositivos. \n\nDale clic a iniciar sesión para que vayas al home.")
