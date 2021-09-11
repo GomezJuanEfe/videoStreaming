@@ -65,10 +65,20 @@ header {
       list-style: none;
       li {
         line-height: 20px;
+        a {
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+        a:visited {
+          color: $black-fourth;
+        }
       }
     }
   }
 }
+
 .login:hover ul, ul:hover {
   display: block;
   cursor: pointer;
@@ -98,4 +108,67 @@ header {
     border: 1px solid $black-fourth;
     outline: none;
   }
+}
+
+//Seccion: Carousel
+section.carousel{
+  display: flex;
+  padding: 0px 4vw;
+  .carousel-item {
+    width: 120px;
+    height: 160px;
+    margin: 10px;
+    position: relative;
+    white-space: nowrap;
+    transition: 500ms all;
+    .carousel-item__img {
+      border-radius: 20px;
+      width: 120px;
+      height: 160px;
+      object-fit: cover;
+    }
+    .carousel-item__details {
+      position: absolute;
+      bottom: 3px;
+      left: 4px;
+      
+      .carousel-item__details--img img{
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+      }
+      p {
+        
+      }
+    }
+  }
+}
+.carousel-item:hover {
+  transform: scale(1.2);
+  transform-origin: center;
+  opacity: 1;
+}
+
+footer {
+  width: 100%;
+  padding: 0 20px;
+  margin: 50px 0px 20px;
+  .terms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  }
+  .credits {
+    margin-top: 30px;
+    p {
+      text-align: center;
+    }
+  }
+}
+a:link, a:visited {
+  color: $brand-fourth;
 }

@@ -57,6 +57,15 @@ header .login ul {
 header .login ul li {
   line-height: 20px;
 }
+header .login ul li a {
+  text-decoration: none;
+}
+header .login ul li a:hover {
+  text-decoration: underline;
+}
+header .login ul li a:visited {
+  color: #807e81;
+}
 
 .login:hover ul, ul:hover {
   display: block;
@@ -86,6 +95,65 @@ header .login ul li {
 .main input:focus {
   border: 1px solid #807e81;
   outline: none;
+}
+
+section.carousel {
+  display: flex;
+  padding: 0px 4vw;
+}
+section.carousel .carousel-item {
+  width: 120px;
+  height: 160px;
+  margin: 10px;
+  position: relative;
+  white-space: nowrap;
+  transition: 500ms all;
+}
+section.carousel .carousel-item .carousel-item__img {
+  border-radius: 20px;
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+}
+section.carousel .carousel-item .carousel-item__details {
+  position: absolute;
+  bottom: 3px;
+  left: 4px;
+}
+section.carousel .carousel-item .carousel-item__details .carousel-item__details--img img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.carousel-item:hover {
+  transform: scale(1.2);
+  transform-origin: center;
+  opacity: 1;
+}
+
+footer {
+  width: 100%;
+  padding: 0 20px;
+  margin: 50px 0px 20px;
+}
+footer .terms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .terms p {
+  margin-top: 10px;
+  cursor: pointer;
+}
+footer .credits {
+  margin-top: 30px;
+}
+footer .credits p {
+  text-align: center;
+}
+
+a:link, a:visited {
+  color: #1884f7;
 }
 
 /*# sourceMappingURL=home.css.map */

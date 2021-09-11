@@ -105,13 +105,13 @@ html {
   margin: 50px 0px 20px;
 }
 .footer .terms {
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .footer .terms p {
   margin-top: 10px;
+  cursor: pointer;
 }
 .footer .credits {
   margin-top: 30px;

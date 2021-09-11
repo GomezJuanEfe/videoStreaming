@@ -1,0 +1,9 @@
+mixin carousel-item(img,title,subtitle)
+  .carousel-item 
+    img.carousel-item__img(src=img, alt="Movie image")
+    .carousel-item__details
+      .carousel-item__details--img
+        img(src="./assets/play-icon.png", alt="play icon")
+        img(src="./assets/plus-icon.png", alt="plus icon")
+      p.carousel-item__details--title=title 
+      p.carousel-item__details--subtitle=subtitle
