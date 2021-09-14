@@ -98,37 +98,79 @@ header .login ul li a:visited {
 }
 
 section.carousel {
-  display: flex;
-  padding: 0px 4vw;
-}
-section.carousel .carousel-item {
-  width: 120px;
-  height: 160px;
-  margin: 10px;
+  overflow: scroll;
+  padding-left: 30px;
+  width: 100%;
   position: relative;
+}
+section.carousel .carousel-container {
+  white-space: nowrap;
+  margin: 70px 0px;
+  padding-bottom: 10px;
+}
+section.carousel .carousel-container .carousel-item {
+  width: 160px;
+  height: 200px;
+  margin: 10px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
   white-space: nowrap;
   transition: 500ms all;
 }
-section.carousel .carousel-item .carousel-item__img {
+section.carousel .carousel-container .carousel-item .carousel-item__img {
   border-radius: 20px;
-  width: 120px;
-  height: 160px;
+  width: 160px;
+  height: 200px;
   object-fit: cover;
 }
-section.carousel .carousel-item .carousel-item__details {
+section.carousel .carousel-container .carousel-item .carousel-item__details {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
   position: absolute;
-  bottom: 3px;
-  left: 4px;
+  bottom: 6px;
+  left: 6px;
+  opacity: 0;
+  transition: 450ms opacity;
 }
-section.carousel .carousel-item .carousel-item__details .carousel-item__details--img img {
+section.carousel .carousel-container .carousel-item .carousel-item__details .carousel-item__details--img img {
   width: 20px;
   height: 20px;
   margin-right: 5px;
+  cursor: pointer;
 }
-.carousel-item:hover {
+section.carousel .carousel-container .carousel-item .carousel-item__details p {
+  color: #ffffff;
+  -webkit-text-stroke-: 0.5px #0a070b;
+}
+section.carousel .carousel-container .carousel-item:hover {
   transform: scale(1.2);
   transform-origin: center;
+}
+section.carousel .carousel-container .carousel-item:hover .carousel-item__details {
   opacity: 1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar:hover:active {
+  background: #999;
 }
 
 footer {
@@ -154,6 +196,13 @@ footer .credits p {
 
 a:link, a:visited {
   color: #1884f7;
+}
+
+@media only screen and (min-width: 600px) {
+  footer .terms {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */
